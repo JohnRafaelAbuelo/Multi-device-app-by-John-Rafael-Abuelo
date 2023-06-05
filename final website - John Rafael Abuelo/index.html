@@ -1,0 +1,228 @@
+<!DOCTYPE html> <!--initiating html documet-->
+<html>
+<head> <!--html head-->
+	<title>Multi-device application by John Rafael Abuelo</title>
+	<link rel="stylesheet" type="text/css" href="style.css"> <!--Linking external stylesheet to html document-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> <!--uploading external fonts-->
+    <meta content="width=device-width, initial-scale=1" name="viewport" /> <!--initiating viewport-->
+    <script src="script.js"></script> <!--linking external javascript-->
+</head>
+<body style="background-image: url(galaxyvid.gif); background-size: contain"> <!--making the main body of the html page-->
+    <nav> <!--creating nav menu bar for ipad and laptop screens-->
+        <!--contents of nav bar-->
+      <ul>
+        <li><img src="menulogo.png" alt="Logo" style="width: 160px; height: 50px; "></li>
+        <li><a href="#home" id="homemenu">Home</a></li>
+        <li><a href="#memberstag">The Guardians</a></li>
+        <li><a href="#musictag">Music</a></li>
+        <li><a href="#newstag">News</a></li>
+        <li><a href="#achievementstag">Achievements</a></li>
+      </ul>
+    </nav>
+<section style="background-color: white;"> <!--creating a section for the menu logo on the menu bar-->
+    <div id="menulogophone">
+        <img src="menulogo.png" alt="Logo" style="width: 160px; height: 50px; "> <!--adding image of menu logo-->
+
+    </div>
+
+    <div class="menu-icon" onclick="toggleMenu()"></div> <!--creating a clickable menu icon for the menu bar of smaller screens-->
+</section>
+  
+  <div id="menu" style="background-color: white;"class="menu"> <!--drop down menu bar for smaller screens-->
+    <!--contents of the dropdown menu bar-->
+    <li><a href="#home" style="padding-top: 20px;"id="homemenu">Home</a></li>
+        <li><a href="#memberstag">The Guardians</a></li>
+        <li><a href="#musictag">Music</a></li>
+        <li><a href="#newstag">News</a></li>
+        <li><a href="#achievementstag" style="margin-bottom: 20px;">Achievements</a></li>
+    
+  </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--linking stylesheet reference for social media bar icons-->
+
+    <div class="socials"> <!--creating div for social media sidebar-->
+        <!--links to each social media page-->
+        <a href="https://www.instagram.com/guardiansofthegalaxy/" target=”_blank” class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/guardians" target=”_blank” class="twitter"><i class="fa fa-twitter"></i></a>
+
+    </div>
+
+    <div id="home"> <!--creating the main div for the home section of the page-->
+        <video id="groupimg"width="320" height="240" autoplay loop> <!--adding group video background on home section-->
+            <source src="group.MP4" type="video/MP4">
+            Your browser does not support the video tag.
+          </video>
+        <img src="logo.png" id="logoimg"/> <!--adding the logo image of the website-->
+
+    </div>
+
+
+    <p id="newstag" style="padding-top: 60px; color: white">--Featured News</p> <!--adding title for news section of the website-->
+    <h1>WHAT'S HAPPENING<br>RIGHT NOW</h1>
+    <section id="news" class="section"> <!-- creating main section for news cards -->
+        <div class="section__content">
+          <div class="news__container">
+            <div class="news__card"> <!-- first news card -->
+                <!--adding title, description, and image for flexbox card-->
+              <img src="ronan.png" alt="News 1" class="news__image">
+              <h3 class="news__title">Ronan the Accuser Officially Defeated!</h3>
+              <p class="news__description">Star-Lord and the guardians defeats Ronan the Accuser with the Power Stone.</p>
+              <button id="readmorebtn">READ MORE</button> 
+            </div>
+            <div class="news__card"> <!-- second news card -->
+                <!--adding title, description, and image for flexbox card-->
+              <img src="ego.png" alt="News 2" class="news__image">
+              <h3 class="news__title">Ego the Living Planet Threatens the Galaxy</h3>
+              <p class="news__description">Ego the Living Planet announces plans on conquering every planet in the galaxy.</p>
+              <button id="readmorebtn">READ MORE</button>  
+            </div>
+            <div class="news__card"> <!-- third news card -->
+                <!--adding title, description, and image for flexbox card-->
+              <img src="thor.jpg" alt="News 3" class="news__image">
+              <h3 class="news__title">Thor Joins the Guardians!</h3>
+              <p class="news__description">The god of thunder temporarily joins the guardians!</p>
+              <button id="readmorebtn">READ MORE</button>
+            </div>
+           
+          </div>
+        </div>
+        <button id="readmorebtnview">VIEW ALL</button> <!--a view all button below the news section of the page-->
+      </section>
+      
+
+      <p id="memberstag" style="padding-top: 60px; color: white">--Meet the Galaxy's Mightiest Guardians</p> <!--adding title for the members section of the website-->
+      <h1>NOT JUST A TEAM,<br>BUT A BIG FAMILY</h1>
+ 
+
+      <section id="members" class="section_members"> <!-- creating main section for members cards -->
+        <div class="section__content_members">
+          <div class="members__container">
+            <div class="members__card"> <!-- first members card -->
+                <!--adding title, description, and image for flexbox card-->
+              <img src="starlord.png" alt="members 1" class="members__image">
+              <h3 class="members__title">Star-Lord</h3>
+              <p class="members__description">Peter Jason Quill is a Celestial-Human hybrid who was abducted from Earth in 1988 by the Yondu Ravager Clan, and raised as one of their members, eventually building a reputation as the notorious intergalactic outlaw Star-Lord. In 2014, he decided to leave the Ravagers and operate individually, unintentionally becoming a key player in the quest for a precious artifact known as the Orb after stealing it from Morag. Following his arrest, he forged an uneasy alliance with fellow inmates Gamora, Drax the Destroyer, Rocket Raccoon, and Groot, who together formed the Guardians of the Galaxy. They first rallied as a team by stopping Ronan the Accuser from destroying Xandar with the Power Stone. </p>
+                
+            </div>
+            <div class="members__card"> <!-- second members card -->
+                <!--adding title, description, and image for flexbox card-->
+              <img src="gamora.png" alt="members 2" class="members__image">
+              <h3 class="members__title">Gamora</h3>
+              <p class="members__description">Gamora Zen Whoberi Ben Titan was a former Zehoberei assassin and a former member of the Guardians of the Galaxy. She became the adopted daughter of Thanos and adopted sister of Nebula after he killed half of her race. Gamora served him for years before betraying him in an attempt to free herself from his ways. She was hired to steal the Orb, and after becoming involved in the Quest for the Orb, she befriended the other members of the Guardians of the Galaxy. After the Battle of Xandar, she left to work with them all.</p>
+                
+            </div>
+            <div class="members__card"> <!-- third members card -->
+                <!--adding title, description, and image for flexbox card-->
+              <img src="rocket.png" alt="members 3" class="members__image">
+              <h3 class="members__title">Rocket Raccoon</h3>
+              <p class="members__description">Subject 89P13 is a raccoon who was genetically modified by High Evolutionary, giving him enhanced intelligence and the ability to speak. While traveling the galaxy, Rocket befriended Groot, and the pair committed crimes and picked up bounties. In 2014, they met Star-Lord, who convinced them to assist him in selling the Orb, which was being sought after by Ronan the Accuser, for a massive profit. However, when they discovered that the Orb contained the Power Stone, Rocket was convinced to risk everything to stop Ronan's plans from using the Infinity Stone to destroy Xandar. During the ensuing conflict, Rocket managed to assist his friends in destroying Ronan, although this resulted in Groot being killed. Rocket then became a member of the Guardians of the Galaxy alongside the newly planted baby Groot.</p>
+              
+            </div>
+
+            <div class="members__card"> <!-- fourth members card -->
+                <!--adding title, description, and image for flexbox card-->
+                <img src="nebula.png" alt="members 1" class="members__image">
+                <h3 class="members__title">Nebula</h3>
+                <p class="members__description">Nebula is a former Luphomoid assassin, an adopted daughter of Thanos and adopted sister of Gamora. Together with Gamora, Nebula was assigned to Ronan the Accuser, during his quest to retrieve the Orb, although Gamora eventually betrayed them. Due to her hatred of Thanos, Nebula joined Ronan when he betrayed Thanos and tried to use the Power Stone by himself to destroy Xandar. During the Battle of Xandar, Nebula fought against the Guardians of the Galaxy but was forced to retreat from the battle. Later, Nebula was captured by the Sovereign and handed back to the Guardians, although she was able to escape and help Taserface in a mutiny against Yondu Udonta. Nebula then attempted to kill Gamora but they reconciled, so she helped the Guardians in their fight against Ego.</p>
+                  
+              </div>
+              <div class="members__card"> <!-- fifth members card -->
+                <!--adding title, description, and image for flexbox card-->
+                <img src="groot.png" alt="members 2" class="members__image">
+                <h3 class="members__title">Groot</h3>
+                <p class="members__description">Groot is a Flora colossus and the accomplice of Rocket Raccoon. Together, the pair had traveled the galaxy picking up bounties until they met Star-Lord and Gamora just before the four of them were captured and put into the Kyln, where they also met Drax the Destroyer. There, they agreed to work together to escape and sell the Orb for a massive profit. However, when it was discovered that the Orb contained one of the Infinity Stones which was being sought out by Ronan the Accuser, Groot convinced his friends to risk everything to stop Ronan's diabolical plans. During the Battle of Xandar, Groot sacrificed his own life to save his new friends. However, part of his destroyed body was planted by Rocket to birth a new Groot, as they joined the Guardians of the Galaxy.</p>
+                  
+              </div>
+              <div class="members__card"> <!-- sixth members card -->
+                <!--adding title, description, and image for flexbox card-->
+                <img src="mantis.png" alt="members 3" class="members__image">
+                <h3 class="members__title">Mantis</h3>
+                <p class="members__description">Mantis is a Celestial hybrid empath with the ability to sense other people's feelings and alter them. She was raised alone by her father Ego and later recruited as a member of the Guardians of the Galaxy led by her paternal half-brother, Peter Quill. Since she was a child, Mantis helped ease Ego's neurotic behavior with her powers until the Guardians came to his planet. After bonding with Drax the Destroyer, she came to care for the Guardians and then allied with them to help prevent Ego from conquering the Galaxy. With her own servitude to Ego ended, she became a full-fledged member of the Guardians and accompanied them on further adventures.</p>
+                
+              </div>
+           
+              <div class="members__card"> <!-- seventh members card -->
+                <!--adding title, description, and image for flexbox card-->
+                <img src="drax.png" alt="members 3" class="members__image">
+                <h3 class="members__title">Drax the Destroyer</h3>
+                <p class="members__description">Drax is a former Kylosian intergalactic criminal and a former member of the Guardians of the Galaxy. He sought revenge on Ronan the Accuser for killing his wife and daughter, and went on a rampage across the galaxy, ending with him becoming known as Drax the Destroyer, and being imprisoned by the Nova Corps in the Kyln. There, Drax became uneasy allies with Star-Lord, Gamora, Rocket Raccoon and Groot. Together, they broke out of the Kyln and became embroiled in the Quest for the Orb. After the Battle of Xandar, in which he finally exacted his vengeance on Ronan, Drax left Xandar with the other Guardians but not before declaring Thanos as his next target.</p>
+                
+              </div>
+
+              <div class="members__card"> <!-- eigth members card -->
+                <!--adding title, description, and image for flexbox card-->
+                <img src="bowie.png" alt="members 3" class="members__image">
+                <h3 class="members__title">The Bowie</h3>
+                <p class="members__description">The Bowie is a spaceship used by the Guardians of the Galaxy, acquired to supersede the Benatar as their primary spacecraft. By 2025, the Guardians of the Galaxy purchased the Bowie as it was significantly larger than the Benatar, and began using it as their primary ship.[1]</p>
+                
+              </div>
+          </div>
+        </div>
+      </section>
+
+    <p id="musictag"style="padding-top: 60px; color: white;">--The Official Music Playlist of the Guardians.</p> <!--creating title for music section of the page-->
+    <h1>VIBE TO STAR-LORD'S<br>FAVORITE SONGS!</h1>
+      <div id="music"> <!--creating main div for music section of the page -->
+        <!--using iframe to import and display external spotify link-->
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6gpWjVtsc8imA8DYgvOxlq?utm_source=generator" width="40%" height="552" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <img src="music.gif" id="peter"> <!--adding gif image for music section-->
+    </div>
+
+    <p id="achievementstag" style="padding-top: 60px; color: white;">--The Guardians' Greatest Achievements!</p> <!--adding title for the achievements/feats section of the page-->
+    <h2>LET'S TAKE A LOOK AT<br>THE MANY ACHIEVEMENTS<br>OF THE GUARDIANS!</h1>
+
+    <section id="achievements" style="width:100%;"> <!--creating main section for the achievements section-->
+        <div class="section__content_feats">
+            <div class="feats__container">
+              <div class="feats__card2"> <!-- first feats card -->
+                <!--adding image for flexbox card-->
+                <img src="feat1.gif" style="padding-top: 30px;"alt="feats 1" class="feats__image">
+                  
+              </div>
+              <div class="feats__card"> <!-- second feats card -->
+                <!--adding title, description for flexbox card-->
+                <h3 class="feats__title">The Fall of Ronan the Accuser</h3>
+                <p class="feats__description">Ronan was a radical Kree warlord and a former Accuser of the Kree Empire. A participant in the Kree-Skrull War, Ronan worked with Yon-Rogg and the Starforce after the Ambush in Torfa to wipe out the last of the Skrull refugees. Ronan and the Accusers were then called to drop warheads on Earth to wipe out the remaining Skrull opposition there, but were repelled when Captain Marvel came to Earth's defense. The Accusers retreated, with Ronan promising retribution.
+
+                    Further disgusted by an armistice made between the Kree and Nova Empires to end the Kree-Nova War, Ronan initiated a new campaign to eradicate the Xandarians by forging an alliance with Thanos, offering the Orb in exchange for the destruction of Xandar. After a long search, Ronan acquired the Orb, but after realizing it had housed the Power Stone, he instead betrayed Thanos and chose to take the Orb's power for himself. Using his new-found power, he and his forces attacked Xandar, only to be defeated and killed by the Guardians of the Galaxy.</p>
+                  
+              </div>
+              <div class="feats__card2"> <!-- third feats card -->
+                <!--adding image for flexbox card-->
+                <img src="feat2.gif" alt="feats 3" class="feats__image">          
+                
+              </div>
+  
+              <div class="feats__card"> <!-- fourth feats card -->
+                <!--adding title, description for flexbox card-->
+                  <h3 class="feats__title">The Defeat of Ego the Living Planet</h3>
+                  <p class="feats__description">Ego's Expansion was an intergalactical conflict orchestrated by the Celestial Ego, a living planet with a humanoid extension of himself, in his quest to conquer and assimilate the universe into new extensions of his consciousness. Over the course of several millennia, Ego planted extraterrestrial seedlings on different planets throughout the cosmos and conceived several children in the hopes that one would be born with Celestial DNA.
+
+                    A child from Earth, Peter Quill genetically inherited the Celestial genes and turned out as Ego's primary target. Quill was convinced to accept his father's agreement and forced to start the process of terraformation in the cosmos. This prompt forced the Guardians of the Galaxy to destroy Ego before he managed to succeed the intergalactic terraformation planning to kill all life and billions of all targeted planets' populations.</p>
+                    
+                </div>
+                <div class="feats__card2"> <!-- fifth feats card -->
+                    <!--adding image for flexbox card-->
+                  <img src="feat3.gif" alt="feats 2" class="feats__image">
+                    
+                </div>
+                <div class="feats__card"> <!-- sixth feats card -->
+                    <!--adding title, description for flexbox card-->
+                  <h3 class="feats__title">The Avengers Takes Down Thanos</h3>
+                  <p class="feats__description">Thanos was a genocidal warlord from Titan, whose main objective was to bring stability to the universe, as he believed its massive population would inevitably use up the universe's entire supply of resources and perish. To complete this goal, Thanos set about hunting down all the Infinity Stones, which combined could wipe out half the universe, being aided by the Black Order, composed of his adopted children. However, the arrival of time-traveling Avengers from 2023 alerted him about the events of the Infinity War and how it would end. By capturing Nebula, he used reverse-engineered technology to venture to the future and lay siege on the Avengers, as he decided to wipe out the entire universe and replace it. However, Thanos had been just too late to stop the victims of the Snap from being resurrected as thousands of heroes returned to stop him. Despite all of Thanos' best efforts, he was unable to claim victory as Tony Stark used the Infinity Stones to destroy the Chitauri, Outriders and Thanos himself, finally ending his reign.</p>
+                  
+                </div>
+             
+            </div>
+          </div>
+        
+    </section>
+
+    <footer style="padding-bottom: 50px;"> <!--initiating footer of the page-->
+        <p>&copy; 2023 Guardians of the Galaxy. All rights reserved.</p>
+        <p>Produced by Marvel Studios.</p> <!--adding footer details-->
+      </footer>
+   
+  </body>
+
+</html>

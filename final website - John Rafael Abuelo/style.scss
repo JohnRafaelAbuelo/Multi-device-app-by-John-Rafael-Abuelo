@@ -1,0 +1,2184 @@
+/*setting color variables*/
+$primary-color: #f2c913;
+$secondary-color: #ff0059;
+$tertiary-color: #bb5e97;
+$accent-color: #777;
+$button-color: #ff9300;
+
+@media only screen and (max-width: 320px) {
+    /* CSS styles for standard resolution mobile - portrait */
+       /* Set the background color to white */
+#homemenu{ /* removing margin from home menu items */
+    margin-left: 0px;
+}
+#readmorebtnview{ /* adding animations and style of view all button */
+    margin-left: 180px;
+    display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+        background-color: white; /* Set the background color */
+         color: black; /* Set the text color */
+        padding: 10px 20px; /* Set the padding */
+         border: none; /* Remove the border */
+        font-size: 12px; /* Set the font size */
+        font-family: 'Raleway', sans-serif;
+        
+    
+}
+
+#readmorebtnview:before { /* adding animations and style of view all button */
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #FF9300;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  #readmorebtnview:hover:before, #readmorebtnview:focus:before, #readmorebtnview:active:before {
+    right: 0;
+  }
+ body { /* removing margins from body */
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #menulogophone{ /* adjusting size of menu logo on nav bar*/
+    padding: 8px;
+    width: 48%;
+  }
+
+  .menu-icon { /* adjusting size of menu icon on nav bar */
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+    position: relative; 
+    bottom: 50px;
+    left: 270px;
+    background-image: url("menuicon.png");
+  }
+  
+  .menu { /*styling menu bar dropdown*/
+    display: none;
+    font-family: 'Raleway', sans-serif ;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+  }
+
+  a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 4px 4px 40px 12px;
+    text-decoration: none;
+    font-weight:bold;
+    
+  }
+  
+  .menu.show {
+    display: block;
+
+  }
+  /* Set the font to Raleway and center the menu bar */
+  nav {
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-size: 18px;
+    font-weight:bold;
+    display: none;
+  }
+
+  /* Style the menu bar */
+  nav ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    background-color: white;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+  nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+    
+  }
+  /* Change the link color on hover */
+  nav li a:hover {
+    background-color: #FC115C;
+    color: white;
+  }
+
+  .socials {
+    position: fixed;
+    top: 70%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+}
+
+    /* Style the icon bar links */
+    .socials a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+    }
+
+        
+        .socials a:hover {
+            background-color: #7C16C8;
+        }
+
+.instagram {
+    background: #FE1353;
+    color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 7px 7px white;
+}
+
+.twitter {
+    background: #FE9E13;
+    color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 7px 7px white;
+}
+
+  #home{
+    background-image: url("galaxy.png");
+    padding-bottom: -800px;
+    height: 300px; /* Set the desired height value */
+    overflow: hidden; /* Hide any content that goes beyond the height */
+  }
+  #groupimg{ /*adjusting background image of website*/
+    
+    width: 275px;
+    height: 195px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    z-index: 0;
+    border-width:1px; border-style:solid; border-color:#BB03C6; padding: 20px;
+    
+  }
+  #logoimg{ /*styling website logo and adding animations*/
+    
+    width: 305px;
+    height: 115px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 0px;
+    position: relative; 
+    bottom: 200px;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: slide-in 5s forwards;
+    }
+    @keyframes slide-in {
+      to {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+  }
+  
+  p{ /*styling paragraphs within website*/
+    margin-left: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+  }
+
+  h1{ /*styling headings within the website and adding radial gradients*/
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: $primary-color; background-image: -webkit-radial-gradient(circle, $primary-color 0%, $secondary-color 100%, $tertiary-color 0%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+  }
+  h2{
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: $primary-color; background-image: -webkit-radial-gradient(circle, $primary-color 0%, $secondary-color 100%, $tertiary-color 0%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+  }
+
+  .section { /*styling sections and aligning items within sections*/
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center; 
+    background-color: #F3EDE4;
+    
+}
+  
+  /* news Container */
+  .news__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    gap: 20px;
+    /* Gap between flex items */ }
+    .slide-in {
+        opacity: 0;
+        transform: translateX(-100%);
+        scroll-margin-top: 100vh; /* set the scroll margin to the height of the viewport */
+        scroll-behavior: smooth; /* add smooth scrolling behavior */
+      }
+  /* news Card */
+  .news__card {
+    width: calc(90% - 20px);
+    padding: 10px;
+    background-color: white;
+    /* Background color in hex format */
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px #888888;
+    opacity: 0;
+  transform: translateX(-100%);
+  animation: slide-in 5s forwards;
+  }
+  @keyframes slide-in {
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+}
+
+  
+   
+  
+  /* news Image */
+  .news__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; }
+  
+  /* news Title */
+  .news__title {
+    font-size: 18px;
+    
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    margin-bottom: 5px; }
+  
+  /* Styles for news description */
+  .news__description {
+    font-size: 14px;
+    /* Font size of 14 pixels */
+    color: #777;
+    /* Text color using a variable $accent-color */
+    margin: 0;
+    /* No margin */ }
+
+    #readmorebtn {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+        background-color: white; /* Set the background color */
+         color: black; /* Set the text color */
+        padding: 10px 20px; /* Set the padding */
+         border: none; /* Remove the border */
+        font-size: 12px; /* Set the font size */
+        font-family: 'Raleway', sans-serif;
+        
+    
+
+        cursor: pointer; /* Change the cursor to a pointer */
+      }
+      #readmorebtn:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: $button-color;
+        height: 4px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
+      #readmorebtn:hover:before, #readmorebtn:focus:before, #readmorebtnt:active:before {
+        right: 0;
+      }
+  
+
+
+/*styling flexbox cards of members section*/
+.section_members {
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center; 
+    background-color: white;
+    
+}
+  
+  
+  /* news Container */
+  .members__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    gap: 20px;
+    /* Gap between flex items */ }
+    .slide-in {
+        opacity: 0;
+        transform: translateX(-100%);
+        scroll-margin-top: 100vh; /* set the scroll margin to the height of the viewport */
+        scroll-behavior: smooth; /* add smooth scrolling behavior */
+      }
+  /* news Card */
+  .members__card {
+    width: calc(90% - 20px);
+    padding: 10px;
+    background-color: white;
+    /* Background color in hex format */
+    border-radius: 10px;
+    margin-left: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    transition: 1s ease;
+  }
+ 
+.members__card:hover {
+    -webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+  }
+
+  
+   
+  
+  /* news Image */
+  .members__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; }
+  
+  /* news Title */
+  .members__title {
+    font-size: 18px;
+    
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    margin-bottom: 5px; }
+  
+  /* Styles for news description */
+  .members__description {
+    font-size: 14px;
+    /* Font size of 14 pixels */
+    color: $accent-color;
+    /* Text color using a variable $accent-color */
+    margin: 0;
+    /* No margin */ }
+
+.members__description{
+    border-width:1px; border-style:solid; border-color:#BB03C6; padding: 20px;
+}
+.members__title{
+    margin: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $primary-color; background-image: -webkit-radial-gradient(circle, #790F80 0%, #FF22EB 40%, #790F80 0%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+}
+
+#music{ /* styling music section of website */
+    background-image: url("tape.png");
+    display: block;
+    padding: 0px;
+}
+
+iframe{ /* styling spotify iframe */
+    display: block;
+    margin: 0 auto;
+    border-width:1px; border-style:solid; border-color:#FFF403; padding: 20px;
+    width: 75%;
+}
+
+#peter{ /* styling gif image in music section */
+    display: block;
+    margin: 0 auto;
+    width: 245px;
+    height: 100px;
+    border-radius:12px;
+    margin-top: 10px;
+    border-width:1px; border-style:solid; border-color:#FFF403; padding: 20px;
+}
+
+
+/*styling flexbox cards of achievements section*/
+.section_feats {
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center; 
+    background-color: white;
+    
+}
+  
+  
+  /* news Container */
+  .feats__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    gap: 20px;
+    /* Gap between flex items */ }
+    .feats__container2 {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0px;
+        gap: 20px;
+        /* Gap between flex items */ }
+    .slide-in {
+        opacity: 0;
+        transform: translateX(-100%);
+        scroll-margin-top: 100vh; /* set the scroll margin to the height of the viewport */
+        scroll-behavior: smooth; /* add smooth scrolling behavior */
+      }
+  /* news Card */
+  .feats__card {
+    width: calc(90% - 20px);
+    padding: 0px;
+    padding-top: 0px;
+    background-color: white;
+    /* Background color in hex format */
+    border-radius: 10px;
+    margin-left: 14px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    
+    transition: 1s ease;
+  }
+ 
+.feats__card:hover {
+    -webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+  }
+
+  .feats__card2 {
+    width: calc(100% - 20px);
+    padding: 0px;
+    background-color: white;
+    /* Background color in hex format */
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    
+    transition: 1s ease;
+  }
+ 
+
+
+  
+   
+  
+  /* news Image */
+  .feats__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; }
+  
+  /* news Title */
+  .feats__title {
+    font-size: 18px;
+    
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    margin-bottom: 5px; }
+  
+  /* Styles for news description */
+  .feats__description {
+    font-size: 14px;
+    /* Font size of 14 pixels */
+    color: $accent-color;
+    /* Text color using a variable $accent-color */
+    margin: 0;
+    /* No margin */ }
+
+.feats__description{
+    border-width:1px; border-style:solid; border-color:#FF8B17; padding: 20px;
+    background-color: #F3EDE4;
+}
+.feats__title{
+    margin: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $primary-color; background-image: -webkit-radial-gradient(circle, #790F80 0%, #FF22EB 40%, #790F80 0%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+}
+/*styling achievments sections*/
+#achievements{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    
+    background-color: white;
+}
+/*styling website footer*/
+footer{
+    background-color: #F3EDE4;
+    padding: 30px;
+    margin-top: 0px;
+}
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    /* CSS styles for standard resolution mobile - portrait */
+       /* Set the background color to white */
+#homemenu{
+    margin-left: 0px;
+}
+#readmorebtnview{
+    margin-left: 180px;
+    display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+        background-color: white; /* Set the background color */
+         color: black; /* Set the text color */
+        padding: 10px 20px; /* Set the padding */
+         border: none; /* Remove the border */
+        font-size: 12px; /* Set the font size */
+        font-family: 'Raleway', sans-serif;
+        
+    
+}
+
+#readmorebtnview:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: $button-color;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  #readmorebtnview:hover:before, #readmorebtnview:focus:before, #readmorebtnview:active:before {
+    right: 0;
+  }
+ body {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #menulogophone{
+    padding: 8px;
+    width: 48%;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("menuicon.png");
+    cursor: pointer;
+    position: relative; 
+    bottom: 50px;
+    left: 330px;
+  }
+  
+  .menu {
+    display: none;
+    font-family: 'Raleway', sans-serif ;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+  }
+
+  a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 4px 4px 40px 12px;
+    text-decoration: none;
+    font-weight:bold;
+    
+  }
+  
+  .menu.show {
+    display: block;
+
+  }
+  /* Set the font to Raleway and center the menu bar */
+  nav {
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-size: 18px;
+    font-weight:bold;
+    display: none;
+    
+  }
+  /* Style the menu bar */
+  nav ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    background-color: white;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+  nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+    
+  }
+  /* Change the link color on hover */
+  nav li a:hover {
+    background-color: #FC115C;
+    color: white;
+  }
+
+  .socials {
+    position: fixed;
+    top: 70%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+}
+
+    /* Style the icon bar links */
+    .socials a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+    }
+
+        
+        .socials a:hover {
+            background-color: #7C16C8;
+        }
+
+.instagram {
+    background: #FE1353;
+    color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 7px 7px white;
+}
+
+.twitter {
+    background: #FE9E13;
+    color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 7px 7px white;
+}
+
+  #home{
+    background-image: url("galaxy.png");
+    padding-bottom: -800px;
+    height: 300px; /* Set the desired height value */
+    overflow: hidden; /* Hide any content that goes beyond the height */
+  }
+  #groupimg{
+    
+    width: 315px;
+    height: 195px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    z-index: 0;
+    border-width:1px; border-style:solid; border-color:#BB03C6; padding: 20px;
+    
+  }
+  #logoimg{
+    
+    width: 375px;
+    height: 135px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 0px;
+    position: relative; 
+    bottom: 200px;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: slide-in 5s forwards;
+    }
+    @keyframes slide-in {
+      to {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+  }
+  
+  p{
+    margin-left: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+  }
+
+  /*styling headers and adding radial gradient*/
+
+  h1{ 
+    font-size: 31px;
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: $primary-color; background-image: -webkit-radial-gradient(circle, $primary-color 0%, $secondary-color 100%, $tertiary-color 0%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+  }
+  h2{
+    font-size: 31px;
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: $primary-color; background-image: -webkit-radial-gradient(circle, $primary-color 0%, $secondary-color 100%, $tertiary-color 0%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+  }
+
+  .section {
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center; 
+    background-color: #F3EDE4;
+    
+}
+
+#news{
+
+}
+  
+  
+  /* news Container */
+  .news__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2px;
+    gap: 20px;
+    /* Gap between flex items */ }
+    .slide-in {
+        opacity: 0;
+        transform: translateX(-100%);
+        scroll-margin-top: 100vh; /* set the scroll margin to the height of the viewport */
+        scroll-behavior: smooth; /* add smooth scrolling behavior */
+      }
+  /* news Card */
+  .news__card {
+    width: calc(90% - 20px);
+    padding: 10px;
+    background-color: white;
+    /* Background color in hex format */
+    border-radius: 10px;
+    margin-left: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px #888888;
+    opacity: 0;
+  transform: translateX(-100%);
+  animation: slide-in 5s forwards;
+  }
+  @keyframes slide-in {
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+}
+
+  
+   
+  
+  /* news Image */
+  .news__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; }
+  
+  /* news Title */
+  .news__title {
+    font-size: 18px;
+    
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    margin-bottom: 5px; }
+  
+  /* Styles for news description */
+  .news__description {
+    font-size: 14px;
+    /* Font size of 14 pixels */
+    color: $accent-color;
+    /* Text color using a variable $accent-color */
+    margin: 0;
+    /* No margin */ }
+
+    #readmorebtn {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+        background-color: white; /* Set the background color */
+         color: black; /* Set the text color */
+        padding: 10px 20px; /* Set the padding */
+         border: none; /* Remove the border */
+        font-size: 12px; /* Set the font size */
+        font-family: 'Raleway', sans-serif;
+        
+    
+
+        cursor: pointer; /* Change the cursor to a pointer */
+      }
+      #readmorebtn:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: $button-color;
+        height: 4px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
+      #readmorebtn:hover:before, #readmorebtn:focus:before, #readmorebtnt:active:before {
+        right: 0;
+      }
+  
+
+
+
+.section_members {
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center; 
+    background-color: white;
+    
+}
+  
+  
+  /* news Container */
+  .members__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 4px;
+    gap: 20px;
+    /* Gap between flex items */ }
+    .slide-in {
+        opacity: 0;
+        transform: translateX(-100%);
+        scroll-margin-top: 100vh; /* set the scroll margin to the height of the viewport */
+        scroll-behavior: smooth; /* add smooth scrolling behavior */
+      }
+  /* news Card */
+  .members__card {
+    width: calc(90% - 20px);
+    padding: 10px;
+    background-color: white;
+    /* Background color in hex format */
+    border-radius: 10px;
+    margin-left: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    transition: 1s ease;
+  }
+ 
+.members__card:hover {
+    -webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+  }
+
+  
+   
+  
+  /* news Image */
+  .members__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; }
+  
+  /* news Title */
+  .members__title {
+    font-size: 18px;
+    
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    margin-bottom: 5px; }
+  
+  /* Styles for news description */
+  .members__description {
+    font-size: 14px;
+    /* Font size of 14 pixels */
+    color: #777;
+    /* Text color using a variable $accent-color */
+    margin: 0;
+    /* No margin */ }
+
+.members__description{
+    border-width:1px; border-style:solid; border-color:#BB03C6; padding: 20px;
+}
+.members__title{
+    margin: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $primary-color; background-image: -webkit-radial-gradient(circle, #790F80 0%, #FF22EB 40%, #790F80 0%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+}
+
+#music{
+    background-image: url("tape.png");
+    display: block;
+    padding: 0px;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+    border-width:1px; border-style:solid; border-color:#FFF403; padding: 20px;
+    width: 75%;
+}
+
+#peter{
+    display: block;
+    margin: 0 auto;
+    width: 285px;
+    height: 120px;
+    border-radius:12px;
+    margin-top: 10px;
+    border-width:1px; border-style:solid; border-color:#FFF403; padding: 20px;
+}
+
+
+
+.section_feats {
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center; 
+    background-color: white;
+    
+}
+  
+  
+  /* news Container */
+  .feats__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px;
+    gap: 20px;
+    /* Gap between flex items */ }
+    .feats__container2 {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0px;
+        gap: 20px;
+        /* Gap between flex items */ }
+    .slide-in {
+        opacity: 0;
+        transform: translateX(-100%);
+        scroll-margin-top: 100vh; /* set the scroll margin to the height of the viewport */
+        scroll-behavior: smooth; /* add smooth scrolling behavior */
+      }
+  /* news Card */
+  .feats__card {
+    width: calc(90% - 20px);
+    padding: 0px;
+    padding-top: 0px;
+    background-color: white;
+    /* Background color in hex format */
+    border-radius: 10px;
+    margin-left: 14px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    
+    transition: 1s ease;
+  }
+ 
+.feats__card:hover {
+    -webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+  }
+
+  .feats__card2 {
+    width: calc(100% - 20px);
+    padding: 0px;
+    background-color: white;
+    /* Background color in hex format */
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    
+    transition: 1s ease;
+  }
+ 
+
+
+  
+   
+  
+  /* news Image */
+  .feats__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; }
+  
+  /* news Title */
+  .feats__title {
+    font-size: 18px;
+    
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    margin-bottom: 5px; }
+  
+  /* Styles for news description */
+  .feats__description {
+    font-size: 14px;
+    /* Font size of 14 pixels */
+    color: $accent-color;
+    /* Text color using a variable $accent-color */
+    margin: 0;
+    /* No margin */ }
+
+.feats__description{
+    border-width:1px; border-style:solid; border-color:#FF8B17; padding: 20px;
+    background-color: #F3EDE4;
+}
+.feats__title{
+    margin: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $primary-color; background-image: -webkit-radial-gradient(circle, #790F80 0%, #FF22EB 40%, #790F80 0%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+}
+
+#achievements{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    
+    background-color: white;
+}
+
+footer{
+    background-color: #F3EDE4;
+    padding: 30px;
+    margin-top: 0px;
+}
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  /* CSS styles for large mobile/tablet - portrait */
+   /* Set the background color to white */
+#homemenu{
+    margin-left: 30px;
+}
+
+.menu{
+    display: none;
+}
+
+#readmorebtnview{
+    margin-left: 500px;
+    display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+        background-color: white; /* Set the background color */
+         color: black; /* Set the text color */
+        padding: 10px 20px; /* Set the padding */
+         border: none; /* Remove the border */
+        font-size: 16px; /* Set the font size */
+        font-family: 'Raleway', sans-serif;
+        
+    
+}
+
+#readmorebtnview:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: $button-color;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  #readmorebtnview:hover:before, #readmorebtnview:focus:before, #readmorebtnview:active:before {
+    right: 0;
+  }
+
+  #menulogophone{
+    padding: 8px;
+    display: none;
+  }
+ body {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+  }
+  /* Set the font to Raleway and center the menu bar */
+  nav {
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-size: 18px;
+    font-weight:bold;
+    
+  }
+  /* Style the menu bar */
+  nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+    background-color: white;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+  nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+    
+  }
+  /* Change the link color on hover */
+  nav li a:hover {
+    background-color: #FC115C;
+    color: white;
+  }
+
+  .socials {
+    position: fixed;
+    top: 70%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+}
+
+    /* Style the icon bar links */
+    .socials a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+    }
+
+        
+        .socials a:hover {
+            background-color: #7C16C8;
+        }
+
+.instagram {
+    background: #FE1353;
+    color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 7px 7px white;
+}
+
+.twitter {
+    background: #FE9E13;
+    color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 7px 7px white;
+}
+
+  #home{
+    background-image: url("galaxy.png");
+    padding-bottom: -800px;
+    height: 670px; /* Set the desired height value */
+    overflow: hidden; /* Hide any content that goes beyond the height */
+  }
+  #groupimg{
+    
+    width: 605px;
+    height: 565px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    z-index: 0;
+    border-width:1px; border-style:solid; border-color:#BB03C6; padding: 20px;
+    
+  }
+  #logoimg{
+    
+    width: 705px;
+    height: 245px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 0px;
+    position: relative; 
+    bottom: 430px;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: slide-in 5s forwards;
+    }
+    @keyframes slide-in {
+      to {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+  }
+  
+  p{
+    margin-left: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+  }
+  h1{
+    font-size: 50px;
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: $primary-color; background-image: -webkit-radial-gradient(circle, $primary-color 0%, $secondary-color 100%, $tertiary-color 0%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+  }
+
+  h2{
+    font-size: 50px;
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: $primary-color; background-image: -webkit-radial-gradient(circle, $primary-color 0%, $secondary-color 100%, $tertiary-color 0%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+  }
+
+
+  .section {
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center; 
+    background-color: #F3EDE4;
+    
+}
+
+#news{
+
+}
+  
+  
+  /* news Container */
+  .news__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    gap: 20px;
+    /* Gap between flex items */ }
+    .slide-in {
+        opacity: 0;
+        transform: translateX(-100%);
+        scroll-margin-top: 100vh; /* set the scroll margin to the height of the viewport */
+        scroll-behavior: smooth; /* add smooth scrolling behavior */
+      }
+  /* news Card */
+  .news__card {
+    width: calc(40% - 20px);
+    padding: 10px;
+    background-color: white;
+    /* Background color in hex format */
+    border-radius: 10px;
+    margin-left: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px #888888;
+    opacity: 0;
+  transform: translateX(-100%);
+  animation: slide-in 5s forwards;
+  }
+  @keyframes slide-in {
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+}
+
+  
+   
+  
+  /* news Image */
+  .news__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; }
+  
+  /* news Title */
+  .news__title {
+    font-size: 18px;
+    
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    margin-bottom: 5px; }
+  
+  /* Styles for news description */
+  .news__description {
+    font-size: 14px;
+    /* Font size of 14 pixels */
+    color: $accent-color;
+    /* Text color using a variable $accent-color */
+    margin: 0;
+    /* No margin */ }
+
+    #readmorebtn {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+        background-color: white; /* Set the background color */
+         color: black; /* Set the text color */
+        padding: 10px 20px; /* Set the padding */
+         border: none; /* Remove the border */
+        font-size: 16px; /* Set the font size */
+        font-family: 'Raleway', sans-serif;
+        
+    
+
+        cursor: pointer; /* Change the cursor to a pointer */
+      }
+      #readmorebtn:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: $button-color;
+        height: 4px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
+      #readmorebtn:hover:before, #readmorebtn:focus:before, #readmorebtnt:active:before {
+        right: 0;
+      }
+  
+
+
+
+.section_members {
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center; 
+    background-color: white;
+    
+}
+  
+  
+  /* news Container */
+  .members__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    gap: 20px;
+    /* Gap between flex items */ }
+    .slide-in {
+        opacity: 0;
+        transform: translateX(-100%);
+        scroll-margin-top: 100vh; /* set the scroll margin to the height of the viewport */
+        scroll-behavior: smooth; /* add smooth scrolling behavior */
+      }
+  /* news Card */
+  .members__card {
+    width: calc(45% - 20px);
+    padding: 10px;
+    background-color: white;
+    /* Background color in hex format */
+    border-radius: 10px;
+    margin-left: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    transition: 1s ease;
+  }
+ 
+.members__card:hover {
+    -webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+  }
+
+  
+   
+  
+  /* news Image */
+  .members__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; }
+  
+  /* news Title */
+  .members__title {
+    font-size: 18px;
+    
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    margin-bottom: 5px; }
+  
+  /* Styles for news description */
+  .members__description {
+    font-size: 14px;
+    /* Font size of 14 pixels */
+    color: $accent-color;
+    /* Text color using a variable $accent-color */
+    margin: 0;
+    /* No margin */ }
+
+.members__description{
+    border-width:1px; border-style:solid; border-color:#BB03C6; padding: 20px;
+}
+.members__title{
+    margin: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $primary-color; background-image: -webkit-radial-gradient(circle, #790F80 0%, #FF22EB 40%, #790F80 0%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+}
+
+#music{
+    background-image: url("tape.png");
+    display: block;
+    padding: 70px;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+    border-width:1px; border-style:solid; border-color:#FFF403; padding: 20px;
+    width: 55%;
+}
+
+#peter{
+    display: block;
+    margin: 0 auto;
+    width: 385px;
+    height: 170px;
+    border-radius:12px;
+    margin-top: 10px;
+    border-width:1px; border-style:solid; border-color:#FFF403; padding: 20px;
+}
+
+
+
+.section_feats {
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center; 
+    background-color: white;
+    
+}
+  
+  
+  /* news Container */
+  .feats__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    gap: 20px;
+    /* Gap between flex items */ }
+    .feats__container2 {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 125px;
+        gap: 20px;
+        /* Gap between flex items */ }
+    .slide-in {
+        opacity: 0;
+        transform: translateX(-100%);
+        scroll-margin-top: 100vh; /* set the scroll margin to the height of the viewport */
+        scroll-behavior: smooth; /* add smooth scrolling behavior */
+      }
+  /* news Card */
+  .feats__card {
+    width: calc(80% - 20px);
+    padding: 0px;
+    padding-top: 0px;
+    background-color: white;
+    /* Background color in hex format */
+    border-radius: 10px;
+    margin-left: 18px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    
+    transition: 1s ease;
+  }
+ 
+.feats__card:hover {
+    -webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+  }
+
+  .feats__card2 {
+    width: calc(80% - 20px);
+    padding: 0px;
+    background-color: white;
+    /* Background color in hex format */
+    border-radius: 10px;
+    margin-left: 18px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    
+    transition: 1s ease;
+  }
+ 
+
+
+  
+   
+  
+  /* news Image */
+  .feats__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; }
+  
+  /* news Title */
+  .feats__title {
+    font-size: 18px;
+    
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    margin-bottom: 5px; }
+  
+  /* Styles for news description */
+  .feats__description {
+    font-size: 14px;
+    /* Font size of 14 pixels */
+    color: $accent-color;
+    /* Text color using a variable $accent-color */
+    margin: 0;
+    /* No margin */ }
+
+.feats__description{
+    border-width:1px; border-style:solid; border-color:#FF8B17; padding: 20px;
+    background-color: #F3EDE4;
+}
+.feats__title{
+    margin: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f2c913; background-image: -webkit-radial-gradient(circle, #790F80 0%, #FF22EB 40%, #790F80 0%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+}
+
+#achievements{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    
+    background-color: white;
+}
+
+footer{
+    background-color: #F3EDE4;
+    padding: 30px;
+    margin-top: 0px;
+}
+}
+
+@media only screen and (min-width: 1025px) {
+    /* CSS styles for tablet/laptop - landscape */
+    #homemenu{
+        margin-left: 90px;
+    }
+    #readmorebtnview{
+        margin-left: 900px;
+        display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            position: relative;
+            overflow: hidden;
+            background-color: white; /* Set the background color */
+             color: black; /* Set the text color */
+            padding: 10px 20px; /* Set the padding */
+             border: none; /* Remove the border */
+            font-size: 16px; /* Set the font size */
+            font-family: 'Raleway', sans-serif;
+            
+        
+    }
+    
+    #readmorebtnview:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: $button-color;
+        height: 4px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
+      #readmorebtnview:hover:before, #readmorebtnview:focus:before, #readmorebtnview:active:before {
+        right: 0;
+      }
+     /* Set the background color to white */
+ body {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #menulogophone{
+    padding: 8px;
+    display: none;
+  }
+  /* Set the font to Raleway and center the menu bar */
+  nav {
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-size: 18px;
+    font-weight:bold;
+    
+  }
+  /* Style the menu bar */
+  nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+    background-color: white;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+  nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+    
+  }
+  /* Change the link color on hover */
+  nav li a:hover {
+    background-color: #FC115C;
+    color: white;
+  }
+
+  .socials {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+}
+
+    /* Style the icon bar links */
+    .socials a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+    }
+
+        
+        .socials a:hover {
+            background-color: #7C16C8;
+        }
+
+.instagram {
+    background: #FE1353;
+    color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 7px 7px white;
+}
+
+.twitter {
+    background: #FE9E13;
+    color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 7px 7px white;
+}
+
+  #home{
+    background-image: url("galaxy.png");
+    padding-bottom: -800px;
+    height: 670px; /* Set the desired height value */
+    overflow: hidden; /* Hide any content that goes beyond the height */
+  }
+  #groupimg{
+    
+    width: 905px;
+    height: 565px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    z-index: 0;
+    border-width:1px; border-style:solid; border-color:#BB03C6; padding: 20px;
+    
+  }
+  #logoimg{
+    
+    width: 705px;
+    height: 245px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 0px;
+    position: relative; 
+    bottom: 430px;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: slide-in 5s forwards;
+    }
+    @keyframes slide-in {
+      to {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+  }
+  
+  p{
+    margin-left: 150px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+  }
+  h1{
+    font-size: 50px;
+    margin-left: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: $primary-color; background-image: -webkit-radial-gradient(circle, $primary-color 0%, $secondary-color 100%, $tertiary-color 0%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+  }
+  h2{
+    font-size: 50px;
+    margin-left: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: $primary-color; background-image: -webkit-radial-gradient(circle, $primary-color 0%, $secondary-color 100%, $tertiary-color 0%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+  }
+
+  .section {
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center; 
+    background-color: #F3EDE4;
+    
+}
+
+#news{
+
+}
+  
+  
+  /* news Container */
+  .news__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 120px;
+    gap: 20px;
+    /* Gap between flex items */ }
+    .slide-in {
+        opacity: 0;
+        transform: translateX(-100%);
+        scroll-margin-top: 100vh; /* set the scroll margin to the height of the viewport */
+        scroll-behavior: smooth; /* add smooth scrolling behavior */
+      }
+  /* news Card */
+  .news__card {
+    width: calc(27% - 20px);
+    padding: 10px;
+    background-color: white;
+    /* Background color in hex format */
+    border-radius: 10px;
+    margin-left: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px #888888;
+    opacity: 0;
+  transform: translateX(-100%);
+  animation: slide-in 10s forwards;
+  }
+  @keyframes slide-in {
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+}
+
+  
+   
+  
+  /* news Image */
+  .news__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; }
+  
+  /* news Title */
+  .news__title {
+    font-size: 18px;
+    
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    margin-bottom: 5px; }
+  
+  /* Styles for news description */
+  .news__description {
+    font-size: 14px;
+    /* Font size of 14 pixels */
+    color: $accent-color;
+    /* Text color using a variable $accent-color */
+    margin: 0;
+    /* No margin */ }
+
+    #readmorebtn {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+        background-color: white; /* Set the background color */
+         color: black; /* Set the text color */
+        padding: 10px 20px; /* Set the padding */
+         border: none; /* Remove the border */
+        font-size: 16px; /* Set the font size */
+        font-family: 'Raleway', sans-serif;
+        
+    
+
+        cursor: pointer; /* Change the cursor to a pointer */
+      }
+      #readmorebtn:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: $button-color;
+        height: 4px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
+      #readmorebtn:hover:before, #readmorebtn:focus:before, #readmorebtnt:active:before {
+        right: 0;
+      }
+  
+
+
+
+.section_members {
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center; 
+    background-color: white;
+    
+}
+  
+  
+  /* news Container */
+  .members__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    gap: 20px;
+    /* Gap between flex items */ }
+    .slide-in {
+        opacity: 0;
+        transform: translateX(-100%);
+        scroll-margin-top: 100vh; /* set the scroll margin to the height of the viewport */
+        scroll-behavior: smooth; /* add smooth scrolling behavior */
+      }
+  /* news Card */
+  .members__card {
+    width: calc(30% - 20px);
+    padding: 10px;
+    background-color: white;
+    /* Background color in hex format */
+    border-radius: 10px;
+    margin-left: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    transition: 1s ease;
+  }
+ 
+.members__card:hover {
+    -webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+  }
+
+  
+   
+  
+  /* news Image */
+  .members__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; }
+  
+  /* news Title */
+  .members__title {
+    font-size: 18px;
+    
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    margin-bottom: 5px; }
+  
+  /* Styles for news description */
+  .members__description {
+    font-size: 14px;
+    /* Font size of 14 pixels */
+    color: $accent-color;
+    /* Text color using a variable $accent-color */
+    margin: 0;
+    /* No margin */ }
+
+.members__description{
+    border-width:1px; border-style:solid; border-color:#BB03C6; padding: 20px;
+}
+.members__title{
+    margin: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $primary-color; background-image: -webkit-radial-gradient(circle, #790F80 0%, #FF22EB 40%, #790F80 0%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+}
+
+#music{
+    background-image: url("tape.png");
+    display: block;
+    padding: 70px;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+    border-width:1px; border-style:solid; border-color:#FFF403; padding: 20px;
+}
+
+#peter{
+    display: block;
+    margin: 0 auto;
+    width: 585px;
+    height: 240px;
+    border-radius:12px;
+    margin-top: 10px;
+    border-width:1px; border-style:solid; border-color:#FFF403; padding: 20px;
+}
+
+
+
+.section_feats {
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center; 
+    background-color: white;
+    
+}
+  
+  
+  /* news Container */
+  .feats__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px;
+    gap: 20px;
+    /* Gap between flex items */ }
+    .slide-in {
+        opacity: 0;
+        transform: translateX(-100%);
+        scroll-margin-top: 100vh; /* set the scroll margin to the height of the viewport */
+        scroll-behavior: smooth; /* add smooth scrolling behavior */
+      }
+  /* news Card */
+  .feats__card {
+    width: calc(28% - 20px);
+    padding: 10px;
+    padding-top: 20px;
+    background-color: white;
+    /* Background color in hex format */
+    border-radius: 10px;
+    margin-left: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    transition: 1s ease;
+  }
+ 
+.feats__card:hover {
+    -webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+  }
+
+  .feats__card2 {
+    width: calc(62% - 20px);
+    padding: 10px;
+    background-color: white;
+    /* Background color in hex format */
+    border-radius: 10px;
+    margin-left: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    transition: 1s ease;
+  }
+ 
+
+
+  
+   
+  
+  /* news Image */
+  .feats__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; }
+  
+  /* news Title */
+  .feats__title {
+    font-size: 18px;
+    
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    margin-bottom: 5px; }
+  
+  /* Styles for news description */
+  .feats__description {
+    font-size: 14px;
+    /* Font size of 14 pixels */
+    color: $accent-color;
+    /* Text color using a variable $accent-color */
+    margin: 0;
+    /* No margin */ }
+
+.feats__description{
+    border-width:1px; border-style:solid; border-color:#FF8B17; padding: 20px;
+    background-color: #F3EDE4;
+}
+.feats__title{
+    margin: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $primary-color; background-image: -webkit-radial-gradient(circle, #790F80 0%, #FF22EB 40%, #790F80 0%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+}
+
+#achievements{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    
+    background-color: white;
+    
+}
+
+footer{ /*styling page footer*/
+    background-color: #F3EDE4; 
+    padding: 30px;
+    margin-top: 0px;
+}
+  }
+
+  .menu{
+    display: none;
+}
+  
